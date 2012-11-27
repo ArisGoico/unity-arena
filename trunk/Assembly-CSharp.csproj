@@ -45,16 +45,7 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Scripts\Controles_especiales.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
-      <Project>{873B4DE2-43AC-D496-65C9-1AE9F4F2B74D}</Project>
-      <Name>Assembly-CSharp-firstpass</Name>
-    </ProjectReference>
-    <ProjectReference Include="Assembly-UnityScript-firstpass.unityproj">
-      <Project>{63446AEC-C608-8427-F564-72B63BB9F3A1}</Project>
-      <Name>Assembly-UnityScript-firstpass</Name>
-    </ProjectReference>
+     <Compile Include="Assets\Scripts\MouseLook.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
