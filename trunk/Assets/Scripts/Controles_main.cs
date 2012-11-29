@@ -1,7 +1,7 @@
 using UnityEngine;
 using System.Collections;
 
-public class Controles_especiales : MonoBehaviour {
+public class Controles_main : MonoBehaviour {
 
 	public Transform terreno;
 	
@@ -16,6 +16,6 @@ public class Controles_especiales : MonoBehaviour {
 	void OnTriggerEnter(Collider other) {
 		if (other.transform.IsChildOf(this.transform.parent) || other.transform == terreno)
 		    return;
-        Debug.Log("Has impactado el objeto " + other.name + "!!");
+        Debug.Log("El objeto " + this.transform.parent.name + " ha impactado el objeto " + other.name + "!!");
     }
 }
