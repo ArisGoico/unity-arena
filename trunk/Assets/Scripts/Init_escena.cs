@@ -22,7 +22,7 @@ public class Init_escena : MonoBehaviour {
 	//Variables de red
 	private string ipConexion		= "127.0.0.1";
 	private int puertoConexion		= 25000;
-	private bool usarNAT			= false;
+	public bool usarNAT				= false;
 	private string ipLocal			= "";
 	private string puertoLocal		= "";
 	
