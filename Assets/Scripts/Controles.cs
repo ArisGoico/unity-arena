@@ -36,22 +36,22 @@ public class Controles : MonoBehaviour {
         Debug.Log("El objeto " + this.transform.parent.name + " ha impactado el objeto " + other.name + "!!");
     }
 	
-	void OnSerializeNetworkView(BitStream stream, NetworkMessageInfo info) {
-		
-		if (stream.isWriting) {
-			Vector3 pos = this.transform.position;
-			Quaternion rot = this.transform.rotation;
-			stream.Serialize(ref pos);
-			stream.Serialize(ref rot);
-		}
-		else {
-			Vector3 pos = Vector3.zero;
-			Quaternion rot = Quaternion.identity;
-			stream.Serialize(ref pos);
-			stream.Serialize(ref rot);
-			this.transform.position = pos;
-			this.transform.rotation = rot;
-		}
-		
-	}
+//	void OnSerializeNetworkView(BitStream stream, NetworkMessageInfo info) {
+//		
+//		if (stream.isWriting) {
+//			Vector3 pos = this.transform.position;
+//			Quaternion rot = this.transform.rotation;
+//			stream.Serialize(ref pos);
+//			stream.Serialize(ref rot);
+//		}
+//		else {
+//			Vector3 pos = Vector3.zero;
+//			Quaternion rot = Quaternion.identity;
+//			stream.Serialize(ref pos);
+//			stream.Serialize(ref rot);
+//			this.transform.position = pos;
+//			this.transform.rotation = rot;
+//		}
+//		
+//	}
 }
