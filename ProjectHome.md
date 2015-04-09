@@ -1,0 +1,1 @@
+Un simple coliseo donde dos personas luchen de manera rudimentaria en un entorno multijugador.
